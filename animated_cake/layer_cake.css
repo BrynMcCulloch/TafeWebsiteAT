@@ -1,0 +1,95 @@
+body {
+    background-color: lightblue;
+}
+.cake {
+    width: 60%;
+    margin: 0 auto;
+    border-top: solid 5px white;
+    border-right: solid 5px white;
+}
+div div {
+    width: 100%;
+    border: solid 1px black;
+}
+div div:hover { /*this is a line of code that will make all the elements on the 2nd DIV level glow when hovered over*/
+    filter: brightness(3); 
+}
+div.marquee {
+    position: absolute;
+    text-align: center;
+    animation-name: marquee;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    margin: 2em auto;
+    margin-top: 0em auto;
+}
+  @keyframes marquee {
+    from {
+      left: 100%;
+    }
+    to {
+      left: -5em;
+    }
+    100% { opacity: 0; }
+    0% { opacity: 1; }
+
+
+
+  }
+.cherry{
+   /* background-color: red;
+    margin: 0em auto;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px */
+    
+}
+.fade-in-image {
+    animation: fadeIn 8s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    margin-left: 20em;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }    
+}
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+.icing {
+    background-color: rgba(255, 255, 255, 0.993);
+    height: 3em;
+}
+.purple {background-color: rgba(128, 0, 128, 0.336);
+}
+.blue {background-color: rgba(0, 0, 255, 0.425);
+}
+.orange {background-color: rgba(255, 166, 0, 0.349);
+}
+.yellow {
+    background-color: rgba(255, 255, 0, 0.418);
+}
+.red {
+    background-color: rgba(255, 0, 0, 0.267);
+}
+.black {
+    background-color: palegreen;
+}
+.plate {
+    margin: 0 auto;
+    width: 73em;
+    height: 3em;
+    border-radius: 1.5em;
+    background-color: rgb(230, 225, 225);
+    margin-left: 23em;
+}
